@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐按键</title>
+    <style>
+        body{
+            font-size: 10px;
+            margin:0px auto;
+            padding: 0px;
+        }
+
+        html{
+            margin: auto;
+            background: url("res/bg.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: cover;
+        }
+        div#content{
+            width: 100%;
+            height:100px;
+            margin: 0px auto;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            min-height:100vh;
+        }
+        div.keys{
+            padding:1rem .5rem;
+            margin: 1rem auto;
+            border-radius:5px;
+            width:80px;
+            height:80px;
+            font-size: 24px;
+            justify-content: center;
+            display:flex;
+            align-items: center;
+            text-shadow:0 0 5px black;
+            border: chartreuse 1px solid;
+        }
+
+        div.keys div{
+            width: 80px;
+            background:rgba(0,0,0,0.4);
+            transition:all .07s;
+            text-shadow:0 0 5px black;
+            height:80px;
+            vertical-align: bottom;
+            text-align: center;
+        }
+        .playing {
+            transform:scale(1.1);
+            border-color:#ffc600;
+            box-shadow: 0 0 10px #ffc600;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="content">
+        <div class="keys" data-key="65">
+            <span>A</span>
+        </div>
+
+        <div class="keys" data-key="66">
+            <span>S</span>
+        </div>
+
+        <div class="keys" data-key="67">
+            <span>D</span>
+        </div>
+
+        <div class="keys" data-key="68">
+            <span>F</span>
+        </div>
+
+        <div class="keys" data-key="69">
+            <span>G</span>
+        </div>
+
+        <div class="keys" data-key="70">
+            <span>H</span>
+        </div>
+
+        <div class="keys" data-key="71">
+            <span>J</span>
+        </div>
+
+        <div class="keys" data-key="72">
+            <span>K</span>
+        </div>
+        <div class="keys" data-key="73">
+            <span>L</span>
+        </div>
+
+        <div class="keys" data-key="74">
+            <span>;</span>
+        </div>
+
+    </div>
+</div>
+
+<audio data-key="65" src="sounds/clap.wav"></audio>
+<audio data-key="66" src="sounds/hihat.wav"></audio>
+<audio data-key="67" src="sounds/kick.wav"></audio>
+<audio data-key="68" src="sounds/openhat.wav"></audio>
+<audio data-key="69" src="sounds/boom.wav"></audio>
+<audio data-key="70" src="sounds/ride.wav"></audio>
+<audio data-key="71" src="sounds/snare.wav"></audio>
+<audio data-key="72" src="sounds/tom.wav"></audio>
+<audio data-key="73" src="sounds/tink.wav"></audio>
+<audio data-key="74" src="sounds/tink.wav"></audio>
+
+
+<script>
+    function removeTransition(evet) {
+        if (evet.propertyName() !== "transform") return;
+        evet.target.classList.remove("playing");
+    }
+
+    function playingSound(evet) {
+        const audio = document.querySelector('audio[data-key]="${evet.keyCode}"]');
+        const  key = document.querySelector('div[data]="${evet.keyCode}"]');
+        if (!audio) return;
+        key.classList.add('playing');
+        audio.currentTime = 0;
+        audio.play();
+
+    }
+
+    const keys = Array.from(document.querySelectorAll('.keys'));
+    keys.forEach(keys=>keys.addEventListener("transitionend",removeTransition));
+    window.addEventListener('keydown',playingSound);
+</script>
+</body>
+</html>
