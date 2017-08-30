@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>音乐按键</title>
+    <script src="jquery-3.2.1.min.js"></script>
     <style>
         body{
             font-size: 10px;
@@ -30,6 +31,7 @@
             padding:1rem .5rem;
             margin: 1rem auto;
             border-radius:5px;
+            transition:all .07s;
             width:80px;
             height:80px;
             font-size: 24px;
@@ -55,6 +57,7 @@
             box-shadow: 0 0 10px #ffc600;
         }
     </style>
+    <script src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -62,66 +65,60 @@
         <div class="keys" data-key="65">
             <span>A</span>
         </div>
-
-        <div class="keys" data-key="66">
+        <div class="keys" data-key="83">
             <span>S</span>
         </div>
-
-        <div class="keys" data-key="67">
+        <div class="keys" data-key="68">
             <span>D</span>
         </div>
-
-        <div class="keys" data-key="68">
+        <div class="keys" data-key="70">
             <span>F</span>
         </div>
-
-        <div class="keys" data-key="69">
+        <div class="keys" data-key="71">
             <span>G</span>
         </div>
-
-        <div class="keys" data-key="70">
+        <div class="keys" data-key="72">
             <span>H</span>
         </div>
-
-        <div class="keys" data-key="71">
+        <div class="keys" data-key="74">
             <span>J</span>
         </div>
-
-        <div class="keys" data-key="72">
+        <div class="keys" data-key="75">
             <span>K</span>
         </div>
-        <div class="keys" data-key="73">
+        <div class="keys" data-key="76">
             <span>L</span>
         </div>
-
-        <div class="keys" data-key="74">
+        <div class="keys" data-key="186">
             <span>;</span>
         </div>
 
     </div>
 </div>
 
-<audio data-key="65" src="sounds/clap.wav"></audio>
-<audio data-key="66" src="sounds/hihat.wav"></audio>
-<audio data-key="67" src="sounds/kick.wav"></audio>
-<audio data-key="68" src="sounds/openhat.wav"></audio>
-<audio data-key="69" src="sounds/boom.wav"></audio>
-<audio data-key="70" src="sounds/ride.wav"></audio>
-<audio data-key="71" src="sounds/snare.wav"></audio>
-<audio data-key="72" src="sounds/tom.wav"></audio>
-<audio data-key="73" src="sounds/tink.wav"></audio>
-<audio data-key="74" src="sounds/tink.wav"></audio>
+<audio data-key=65 src="res/clap.mp3"></audio>
+<audio data-key=83 src="res/hihat.mp3"></audio>
+<audio data-key=68 src="res/kick.mp3"></audio>
+<audio data-key=70 src="res/openhat.mp3"></audio>
+<audio data-key=71 src="res/boom.mp3"></audio>
+<audio data-key=72 src="res/clap.mp3"></audio>
+<audio data-key=74 src="res/hihat.mp3"></audio>
+<audio data-key=75 src="res/kick.mp3"></audio>
+<audio data-key=76 src="res/openhat.mp3"></audio>
+<audio data-key=186 src="res/openhat.mp3"></audio>
 
 
 <script>
     function removeTransition(evet) {
-        if (evet.propertyName() !== "transform") return;
-        evet.target.classList.remove("playing");
+        console.log("1231231");
+        if (evet.propertyName !== 'transform') return;
+         evet.target.classList.remove('playing');
     }
 
     function playingSound(evet) {
-        const audio = document.querySelector('audio[data-key]="${evet.keyCode}"]');
-        const  key = document.querySelector('div[data]="${evet.keyCode}"]');
+        var keyCode = evet.keyCode;
+        const audio = document.querySelector(`audio[data-key="${evet.keyCode}"]`);
+        const  key = document.querySelector(`div[data-key="${evet.keyCode}"]`);
         if (!audio) return;
         key.classList.add('playing');
         audio.currentTime = 0;
@@ -130,7 +127,7 @@
     }
 
     const keys = Array.from(document.querySelectorAll('.keys'));
-    keys.forEach(keys=>keys.addEventListener("transitionend",removeTransition));
+    keys.forEach(keys=>keys.addEventListener('transitionend',removeTransition));
     window.addEventListener('keydown',playingSound);
 </script>
 </body>
