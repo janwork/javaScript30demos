@@ -25,7 +25,7 @@
     }
 
     .player{
-        max-width: 750px;
+        max-width: 640px;
         border: 5px solid rgba(0,0,0,0.2);
         border-shadow:0 0 20px rgba(0,0,0,0.2);
         position: relative;
@@ -93,7 +93,7 @@
         width: 50%;
         background: #ffc600;
         flex: 0;
-        flex-basis: 50%;
+        flex-basis: 0%;
     }
 
 
@@ -167,19 +167,112 @@
 <body>
 
 <div class="player">
-    <video class="player_video" src="res/1.mp4" width="750" height="450"></video>
+    <video class="player_video viewer" src="res/1.mp4" width="750" height="450"></video>
     
     <div class="player_contrls">
         <div class="progress">
             <div class="progress_filled"></div>
         </div>
         <button class="player_button toggle" title="Toggle Play">►</button>
-        <input type="range" name="volume" class="player_slider" min=0 max=1 step="0.05" value="1">
+        <input type="range" name="volume" class="player_slider" min=0 max="1" step="0.05" value="1">
         <input type="range" name="playbackRate" class="player_slider" min="0.5" max="2" step="0.1" value="1">
         <button data-skip="-10" class="player_button"><< 10s</button>
         <button data-skip="25" class="player_button">25s>></button>
     </div>
 </div>
+
+<script>
+    //get the element
+
+    const player = document.querySelector('.player');
+    const vedio = document.querySelector('.player_video');
+    const progress= document.querySelector('.progress');
+    const progressBar = document.querySelector('.progress_filled');
+    const toggle = document.querySelector('.toggle');
+    const skipButtons = document.querySelectorAll('[data-skip]');
+//    const skipButtons = document.querySelectorAll('.player_button');
+    const range = document.querySelectorAll('.player_slider');
+
+
+//    Func
+    
+    function togglePlay() {
+//        if (vedio.pauesd){
+//            vedio.play();
+//        }else{
+//            vedio.pause();
+//        }
+        const method = vedio.paused ? 'play':'pause';
+        vedio[method]();
+    }
+    
+    function updateButton() {
+
+        const icon = this.paused ?'►':'| |';
+        toggle.textContent = icon;
+        
+    }
+    
+    function skip() {
+        console.log(this.dataset.skip);
+        console.log(typeof(vedio.currentTime));
+        console.log(typeof(parseInt(this.dataset.skip)));
+//        vedio.currentTime = vedio.currentTime + Number(this.dataset.skip); //获取data属性
+        vedio.currentTime = vedio.currentTime + 10000;
+        console.log(vedio.currentTime);
+    }
+
+    function handlerRangeUpdate() {
+        console.log(this.name);
+        vedio[this.name] = this.value;
+
+    }
+    
+    
+    function handlerProgress() {
+        const percent = (vedio.currentTime / vedio.duration) * 100;
+        progressBar.style.flexBasis = `${percent}%`;
+        
+        
+    }
+    
+    function scurb(e) {
+
+        console.log(e);
+
+        const scurbTime = (e.offsetX / progress.offsetWidth) * vedio.duration;
+        vedio.currentTime = scurbTime;
+        
+    }
+
+//    event listener
+
+    vedio.addEventListener('click',togglePlay);
+    vedio.addEventListener('play',updateButton);
+    vedio.addEventListener('pause',updateButton);
+    vedio.addEventListener('timeupdate',handlerProgress);
+
+
+
+    toggle.addEventListener('click',togglePlay);
+
+    skipButtons.forEach(btn=>btn.addEventListener('click',skip));
+
+    
+    range.forEach(range => range.addEventListener('change',handlerRangeUpdate));
+    range.forEach(range => range.addEventListener('mousemove',handlerRangeUpdate));
+
+
+    let mousedown = false;
+
+    progress.addEventListener('click',scurb);
+    progress.addEventListener('mousemove',(e) => mousedown && scurb(e));
+    progress.addEventListener('mouseup',() => mousedown = false);
+    progress.addEventListener('mousedown',() => mousedown = true);
+    
+    
+    
+</script>
 
 </body>
 </html>
