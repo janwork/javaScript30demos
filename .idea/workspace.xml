@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e980fea-885d-4bd0-955c-7a4ad4c323ac" name="Default" comment="local storage 前面">
+    <list default="true" id="5e980fea-885d-4bd0-955c-7a4ad4c323ac" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mouseShadow/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mouseShadow/jquery-3.2.1.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/localStorage/index.html" afterPath="$PROJECT_DIR$/localStorage/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,21 +45,41 @@
       <file leaf-file-name="document.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Document/document.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="3726">
               <caret line="138" column="64" lean-forward="false" selection-start-line="138" selection-start-column="64" selection-end-line="138" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/localStorage/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="121" column="64" lean-forward="true" selection-start-line="121" selection-start-column="60" selection-end-line="121" selection-end-column="60" />
+            <state relative-caret-position="123">
+              <caret line="118" column="28" lean-forward="false" selection-start-line="118" selection-start-column="28" selection-end-line="118" selection-end-column="28" />
               <folding>
                 <marker date="1507736207878" expanded="true" signature="5284:5445" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-3.2.1.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mouseShadow/jquery-3.2.1.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mouseShadow/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,6 +117,7 @@
         <option value="$PROJECT_DIR$/shiftMenu/shiftMenu.html" />
         <option value="$PROJECT_DIR$/Document/document.html" />
         <option value="$PROJECT_DIR$/localStorage/index.html" />
+        <option value="$PROJECT_DIR$/mouseShadow/index.html" />
       </list>
     </option>
   </component>
@@ -132,6 +154,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,28 +178,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pre_ajax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaScript30demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javaScript30demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="localStorage" />
+              <option name="myItemId" value="mouseShadow" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,22 +199,19 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\shiftMenu" />
-      <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\keyMusic" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\mouseShadow" />
       <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\localStorage" />
       <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\Document" />
       <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\customVedio" />
       <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\pre_ajax" />
-      <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\canvas" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\shiftMenu" />
+      <recent name="C:\Users\Jan\Desktop\githubDemo\javaScript30demos\keyMusic" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration default="false" name="canvas.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javaScript30demos/canvas/canvas.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration default="false" name="customVedioPlayer.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javaScript30demos/customVedio/customVedioPlayer.html">
       <method />
     </configuration>
@@ -217,6 +222,9 @@
       <method />
     </configuration>
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javaScript30demos/localStorage/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javaScript30demos/mouseShadow/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -279,19 +287,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.canvas.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.customVedioPlayer.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.shiftMenu.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.document.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.customVedioPlayer.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.shiftMenu.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.document.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.document.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.shiftMenu.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.customVedioPlayer.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.canvas.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.document.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.shiftMenu.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.customVedioPlayer.html" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +331,8 @@
       <workItem from="1506433800385" duration="1792000" />
       <workItem from="1506520967325" duration="3188000" />
       <workItem from="1507645776558" duration="3423000" />
-      <workItem from="1507731462674" duration="4766000" />
+      <workItem from="1507731462674" duration="5105000" />
+      <workItem from="1507816270234" duration="2715000" />
     </task>
     <task id="LOCAL-00001" summary="add background">
       <created>1504194143662</created>
@@ -416,17 +425,24 @@
       <option name="project" value="LOCAL" />
       <updated>1507648454492</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="done&#10;">
+      <created>1507736262057</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1507736262057</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66061000" />
+    <option name="totallyTimeSpent" value="69115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23660715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23656717" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -482,27 +498,14 @@
     <MESSAGE value="加入 验证密码" />
     <MESSAGE value="滑动图片显示" />
     <MESSAGE value="local storage 准备" />
-    <option name="LAST_COMMIT_MESSAGE" value="local storage 准备" />
+    <MESSAGE value="done&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="done&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/keyMusic/keyMusic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flexPanel/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3807">
-          <caret line="141" column="5" lean-forward="false" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shiftMenu/jquery-3.2.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -825,7 +828,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Document/document.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="3726">
           <caret line="138" column="64" lean-forward="false" selection-start-line="138" selection-start-column="64" selection-end-line="138" selection-end-column="64" />
           <folding />
         </state>
@@ -833,11 +836,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/localStorage/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="121" column="64" lean-forward="true" selection-start-line="121" selection-start-column="60" selection-end-line="121" selection-end-column="60" />
+        <state relative-caret-position="123">
+          <caret line="118" column="28" lean-forward="false" selection-start-line="118" selection-start-column="28" selection-end-line="118" selection-end-column="28" />
           <folding>
             <marker date="1507736207878" expanded="true" signature="5284:5445" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouseShadow/jquery-3.2.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouseShadow/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
