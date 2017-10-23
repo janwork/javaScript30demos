@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .player{
+            height:200px;
+            width:300px;
+        }
+        .hasimg{
+            display:inline-block;
+            vertical-align: top;
+        }
+        .strip{
+            height:200px;
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+<div class="photobooth">
+    <div class="controls">
+        <button onclick="takePhoto()">Take Photo</button>
+        <div class="rgb">
+            <label for="rmin">Red Min:</label>
+            <input type="range" min=0 max=255 name="rmin">
+            <label for="rmax">Red Max:</label>
+            <input type="range" min=0 max=255 name="rmax">
+
+            <br>
+
+            <label for="gmin">Green Min:</label>
+            <input type="range" min=0 max=255 name="gmin">
+            <label for="gmax">Green Max:</label>
+            <input type="range" min=0 max=255 name="gmax">
+
+            <br>
+
+            <label for="bmin">Blue Min:</label>
+            <input type="range" min=0 max=255 name="bmin">
+            <label for="bmax">Blue Max:</label>
+            <input type="range" min=0 max=255 name="bmax">
+        </div>
+    </div>
+
+    <canvas class="photo"></canvas>
+    <video class="strip"></video>
+</div>
+
+<script src="js.js"></script>
+
+</body>
+</html>
